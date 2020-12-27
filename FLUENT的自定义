@@ -1,0 +1,8 @@
+FLUENT中自带的基本数据库，毫无疑问无法满足用户的需求。FLUENT推出了三种办法来解决用户的扩展需求
+1、UDF COMPILED
+2、UDF interpreted
+3、框内的完全自定义
+
+1、2两种办法，都是基于C++语言展开的。我过去很长一段时间都无法解决64位平台问题，导致无法加载编译好的材料参数。
+后续我终于搞懂了FLUENT中Defining Properties Using Temperature-Dependent Functions的具体操作后，我认为这是自定义材料参数更加简单的一种办法。
+同时在推出ANSYS 2020 R2之后，FLUENT 中物性参数的定义可视化效果更加良好，有助于用户在fluent内部即可以实现对定义结果的检查。
