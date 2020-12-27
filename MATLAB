@@ -1,0 +1,10 @@
+MATALB太强大：
+1、在MATLAB安装完成后，可以将文件夹集体copy走，放置于任何一个盘符，在bin子文件夹下找到matlab.exe后，仍可以执行完整的MATLAB功能
+2、MATLAB的曲线拟合功能：
+close all; clear all; clc
+temp=xlsread('waterline.xlsx','B2:B33');
+densi=xlsread('waterline.xlsx','F2:F33');
+cftool(temp,densi)
+%plot(temp,densi,'linestyle','none','marker','.','markersize',20)
+这也是对FLUENT中自定义曲线的一个基础。
+3、MATLAB生成的图片，可以保存成SVG格式。其具有非常小的存储空间占比、以及非常清楚的嵌入word、打印效果。简直是科研论文的不二之选。
